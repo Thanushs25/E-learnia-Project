@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #1eb2a6;
+            color: whitesmoke;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+            margin-left: auto;
+
+        }
+
+        #search-input {
+            width: 300px;
+            border-radius: 18px;
+            height: 30px;
+            padding-left: 5px;
+
+        }
+
+        .search-i {
+            border-radius: 18px;
+            width: 81px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: #1eb2a6;
+            color: whitesmoke;
+            border: none;
+            align-items: right;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>E-Learnia !</h1>
+    <h3>( An Online Educational Platform )</h3>
+    <p><b style="padding-left: 5px; padding-bottom: 0px;">Search by</b></p>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder=" Search...">
+        <button onclick="searchTable()" class="search-i">Search</button>
+    </div>
+
+    <table id="myTable">
+        <tr>
+            <th>S.No</th>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Tutor</th>
+            <th>Description</th>
+            <th>Lectures</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>nco3_hhs210</td>
+            <td>Introducion to Software Engineering</td>
+            <td>Vetrivendhan</td>
+            <td>Software is a program or set of programs containing instructions that provide desired functionality. And
+                Engineering is the process of designing and building something that serves a particular purpose and
+                finds a cost-effective solution to problems.Software Engineering is a systematic, disciplined,
+                quantifiable study and approach to the design, development, operation, and maintenance of a software
+                system.</td>
+            <td>50 lectures(190 hours)</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>nco4_hhs211</td>
+            <td>Enhancing Adobe Photoshop CC 2020 Skills</td>
+            <td>Pranesh</td>
+            <td>Photoshop also has such a vast feature-set, with regular updates, that there`s almost always something
+                new to learn, even for those who have already been using the software for years . There are lots of
+                tools and features to learn, and a host of tricks and shortcuts that can save time and improve your
+                workflow.</td>
+            <td>30 lectures(125 hours)</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>nco5_hhs212</td>
+            <td>
+                Advanced HTML, CSS, and Javascript for Web Developers</td>
+            <td>Venkat Prabhu</td>
+            <td>These three tools dominate web development. Every library or tool seems to be centered around HTML, CSS,
+                and JS. So if you want to become a web developer, you need to learn them well.
+
+                You'll also discover that websites are mostly built from these three languages.</td>
+            <td>50 lectures(50 hours)</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>nco6_hhs213</td>
+            <td>
+                Introducion about Programming with WordPress</td>
+            <td>Anu</td>
+            <td>TA WordPress developer is a type of web developer. They specialize in building websites with WordPress.
+                They are also full-stack developers, meaning they can develop the front-end and back-end of a website. A
+                WordPress developer may be hired to enhance the WordPress software or build</td>
+            <td>20 lectures(20 hours)</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>nco7_hhs213</td>
+            <td>
+                Advanced Programming with ReactJS</td>
+            <td>Anushya</td>
+            <td>This course, Advanced React.js, covers many advanced topics and best practices about React.js. First,
+                you'll learn how to configure and customize full-stack JavaScript environments. Next, you'll explore how
+                to work with async data and manage an application state both internally and externally. Additionally,
+                you'll dive into components context API, and learn how to use it with higher order components, pure
+                components, presentational and container components, and all components lifecycle methods. Finally,
+                you'll discover performance analysis and optimization, how to use immutable data structures, and how to
+                create production builds for both React.js and Node.js. By the end of this course, you'll be able to
+                efficiently use presentational and stateful React components in production.</td>
+            <td>100 lectures(150 hours)</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>nco8_hhs214</td>
+            <td>
+                Learn Frontend Programming Language</td>
+            <td>Thanya</td>
+            <td>Front-end development brings designs to life by creating interactive and visually appealing websites and
+                applications. It's a field that combines creativity and technical skills, allowing you to turn ideas
+                into reality</td>
+            <td>200 lectures(300 hours)</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>nco9_hhs215</td>
+            <td>
+                Introduction with HTML / CSS</td>
+            <td>Price</td>
+            <td>HTML and CSS are two languages that work together to create everything that you see when you look at
+                something on the internet. HTML is the raw data that a webpage is built out of. All the text, links,
+                cards, lists, and buttons are created in HTML. CSS is what adds style to those plain elements. HTML puts
+                information on a webpage, and CSS positions that information, gives it color, changes the font, and
+                makes it look great!</td>
+            <td>20 lectures(50 hours)</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>nco10_hhs216</td>
+            <td>
+                Introduction about OOPS</td>
+            <td>Kapoor</td>
+            <td>As the name suggests, Object-Oriented Programming or OOPs refers to languages that use objects in
+                programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding,
+                polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions
+                that operate on them so that no other part of the code can access this data except that function.</td>
+            <td>80 lectures(200 hours)</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>nco11_hhs217</td>
+            <td>
+                Introducion with HTML / CSS / JAVASCRIPT</td>
+            <td>Thanush</td>
+            <td>This introductory course to HTML ,CSS and JavaScript is vital for anyone who wants to become a web
+                developer..
+                These three technologies are skills every web developer must learn and have.
+                HTML : Used to create content
+                CSS: Used to present the content
+                JavaScript : Used to create interaction
+                They are the building blocks of all websites and web based projects.
+                This course will teach you the basics of these three technologies by creating a basic one page website
+                and 7 other projects.</td>
+            <td>50 lectures(50 hours)</td>
+        </tr>
+    </table>
+    <br>
+    <hr>
+   
+
+    <script>
+        function searchTable() {
+            var input = document.getElementById('search-input').value.toUpperCase();
+            var table = document.getElementById('myTable');
+            var rows = table.getElementsByTagName('tr');
+
+            for (var i = 1; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName('td');
+                var found = false;
+
+                for (var j = 0; j < cells.length; j++) {
+                    var cell = cells[j];
+
+                    if (cell.innerText.toUpperCase().indexOf(input) > -1) {
+                        found = true;
+                        break;
+                    }
+                }
+
+                if (found) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

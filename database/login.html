@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+  <h1 style="text-align: center; font-family: Roboto; font-style: inherit;">Welcome to E-Learnia !</h1> 
+  <h2 style="text-align: center; font-family: Roboto; font-style: inherit;">( An Online Education & Learning ) </h2>
+  <div class="login-page">
+    <div class="avatar">
+      <img
+        src="https://img.freepik.com/premium-vector/scholar-student-success-logo-icon-illustration-brand-identity_7109-1054.jpg"
+        alt="Avatar">
+    </div>
+    <div class="form">
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" id="name">
+        <input type="password" placeholder="Password" id="pass">
+        <input type="button" value="login" id="login" class="button">
+      </form>
+      <p id="res"></p>
+      <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
+      <p class="message">After login, Click here to go to <a href="https://localhost:3000">Home Page</a></p>
+      <p class="message">Forgot your password? <a href="#">Click here to reset it</a></p>
+    </div>
+  </div>
+  <script>
+    const login = document.getElementById('login');
+    const result = document.getElementById('res');
+    const Name = document.getElementById('name');
+    const password = document.getElementById('pass');
+    login.addEventListener('click', () => {
+      var data = {
+        mail: Name.value,
+        Password: password.value,
+      }
+      fetch('http://localhost:9000/api/login', {
+        method: "POST",
+        headers: {
+          'Content-type': 'application/json; chatset=UTF-8'
+        },
+        body: JSON.stringify(data)
+      })
+      .then((res) => {return res.text()})
+      .then((res) => {result.innerText=res});
+    })
+  </script>
+</body>
+
+</html>
